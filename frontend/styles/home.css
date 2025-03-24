@@ -1,0 +1,111 @@
+html, body {
+    background-color: #050913;
+    color: white;
+}
+header{
+    margin-top: 200px;
+
+}
+
+#logoNav{
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+}
+
+/* codice per la navbar figa blurrata */
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background-color: rgba(5, 9, 19, 0.01);
+    z-index: 2;
+}
+
+/* ----------------------- */
+
+#imgUtente{
+    height: 35px;
+    width: auto;
+}
+
+#tooltip{
+    margin-top: 64px;
+    position: fixed;
+    right: 0;
+    top:0%;
+    z-index: 3;
+}
+
+#tooltip div{
+    background-color: rgba(32, 33, 36, 0.21);
+    border: 1px solid rgba(32, 33, 36, 0.21);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+#tooltip div a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+#tooltip div a:hover{
+    text-decoration: underline;
+}
+
+
+h3{
+    color: white;
+}
+
+.nav-link{
+    color: white;
+}
+
+@keyframes linkAnimation{
+    50% {transform: scaleY(1.1); transform: scaleX(1.1);}
+    100% {transform: scaleY(1.0);transform: scaleX(1.0);}
+    
+}
+
+.nav-link:hover{
+    color: white;
+    /* transform: scale(1.1);
+    transition: 0.1s; */
+    animation-name: linkAnimation;
+    animation-duration: 0.3s;
+
+}
+
+#testBtn{
+    background-color: #00FFFF;
+    /*box-shadow: 0px 0px 20px 0px #24e41e; */
+
+    /* background-image: linear-gradient(to bottom right, #ec771d, #1888bb 60%, #e1dc5b); */
+    /* background-image: linear-gradient(to bottom right,#1888bb, #6ebd33 70%, #e1dc5b); */
+    box-shadow: 0px 0px 3px 0px #00ffff58;
+    border: 0px;
+    color: #050913;
+}
+
+#testBtn:hover{
+    transition: 0.15s;
+    box-shadow: 0px 0px 35px 1px #00ffff58;
+}
+
+#getStarted{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
