@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../styles/signup.css">
+    <script src="../scripts/signup.js"></script>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <div class="col-5 p-4" id="mockupDiv">
+            <h2 class="catchphrase ms-2">Signup to begin</h2>
+            <h2 class="catchphrase ms-2">your Experience.</h2>
+        </div>
+        <h2 id="catchphrase2" class="m-3">Signup to begin your Experience.</h2>
+        <div class="form-container col-7" id="loginDiv">
+            <p class="title">Register</p>
+            <form class="form">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" placeholder="Username">
+                </div>
+                <div class="input-group my-3">
+                    <label for="username">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                <div class="form-check mt-2" id="divShowPwd">
+                    <input class="form-check-input mt-1" type="checkbox" value="" id="showPwd">
+                    <label class="form-check-label text-light ms-2" for="flexCheckDefault">
+                        Show password
+                    </label>
+                </div>
+                  
+                <hr>
+                <button class="sign">Sign Up</button>
+            </form>
+            <p class="signup mt-2">Already have an account?
+                <a rel="noopener noreferrer" href="login.html" class="">Sign in</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
