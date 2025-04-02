@@ -12,7 +12,7 @@
     "typescript": "^5.8.2"
   },
   "scripts": {
-    "start": "node dist/server.js",
+    "start": "nodemon server.ts",
     "dev": "nodemon server.ts",
     "build": "tsc"
   }
