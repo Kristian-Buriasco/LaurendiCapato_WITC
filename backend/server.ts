@@ -31,6 +31,6 @@ ex.listen(PORT, () => {
 });
 
 
-ex.get("/", (req: Request, res: Response) => {
+ex.get("/api", (req: Request, res: Response) => {
     res.send("Server is running!");
 });
