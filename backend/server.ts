@@ -10,7 +10,7 @@ const DB_NAME = "5E";
 const COLLECTION_NAME = "unicorns";
 
 // DEBUG insert a request to http://srv-captain--backend-witc;
-fetch("http://srv-captain--backend-witc/")
+fetch("http://srv-captain--backend-witc:4000/")
     .then(response => response.text())
     .then(data => console.log(data))
     .catch(error => console.error('Error:', error));
