@@ -9,6 +9,13 @@ const PORT = 4000;
 const DB_NAME = "5E";
 const COLLECTION_NAME = "unicorns";
 
+// DEBUG insert a request to http://srv-captain--backend-witc;
+fetch("http://srv-captain--backend-witc/")
+    .then(response => response.text())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+
+
 let ex = express();
 const client = new MongoClient(MONGO_URI);
 
