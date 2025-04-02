@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "dockerfileLines": [
     "FROM node:18",
-    "WORKDIR /",
+    "WORKDIR /backend",
     "COPY . .",
     "RUN npm install",
     "CMD [\"npm\", \"start\"]",
