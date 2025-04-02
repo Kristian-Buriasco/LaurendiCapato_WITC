@@ -27,3 +27,8 @@ async function connectDB() {
 ex.listen(PORT, () => {
     console.log(`Server in ascolto su: http://localhost:${PORT}`);
 });
+
+
+ex.get("/", (req: Request, res: Response) => {
+    res.send("Server is running!");
+});
