@@ -3,9 +3,10 @@
   "dockerfileLines": [
     "FROM node:18",
     "WORKDIR /app",
+    “ADD https://www.google.com /time.now ”,
     "COPY . .",
     "RUN npm install",
     "CMD [\"npm\", \"start\"]",
-    "EXPOSE 4000"
-  ]
+    "EXPOSE 4000"
+  ]
 }
