@@ -25,7 +25,7 @@
   <header class="mb-5">
     <nav id="navbar" class="navbar navbar-expand-sm fixed-top">
       <div class="container-fluid">
-        <img class="navbar-brand" id="logoNav" src="../img/Logo_WITC_NoBG.png">
+        <img class="navbar-brand" id="logoNav" src="Logo_WITC_NoBG.png">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,40 +41,219 @@
               <a class="nav-link" href="#">Reviews</a>
             </li>
           </ul>
-          <img id="imgUtente" class="ms-auto me-2"
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABT0lEQVR4nN2UQUoDQRBFh0iEbLyD7nW8RZaGGPUUutCtF4i61wOIdxCP4cKJiV7AlVFQkcwLBTUw9FRPd4urPChoen5V9VR1V5atNMA6cATcAQXwqVbo3qFo/hp8H3ghzAwYpgReA66MQCUwUZO1yyXQiUlgBS+AnZom10QuFzFlcVlIQEObe/5k0NbQmXX6zH8g6y9ezcbrbbGYJCYQDiyxXDuL0lOiXU+JhNuU06Dfcif4M36aZQXmtFMGrmmduZXgg//jPbVEqTzFNvkNuNb3sQn01LZ070Y1UU2WwVXxC5xLsIaw6ddTrfhUjEIP7T4U2AV4UN8p0PWJhir6AvqmyPbrq4+wFxLLVBS+gWOZroHJewL8qM845jQdmYq1ej4Cp8A2sKEm6zP9VjGOGte1RAOtZ4hpsCwtSboyuOTayd3Wxygma9kbeRu6MiwBRPAwwki22OQAAAAASUVORK5CYII="
-            alt="user-male-circle">
+          <img id="imgUtente" class="ms-auto me-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABT0lEQVR4nN2UQUoDQRBFh0iEbLyD7nW8RZaGGPUUutCtF4i61wOIdxCP4cKJiV7AlVFQkcwLBTUw9FRPd4urPChoen5V9VR1V5atNMA6cATcAQXwqVbo3qFo/hp8H3ghzAwYpgReA66MQCUwUZO1yyXQiUlgBS+AnZom10QuFzFlcVlIQEObe/5k0NbQmXX6zH8g6y9ezcbrbbGYJCYQDiyxXDuL0lOiXU+JhNuU06Dfcif4M36aZQXmtFMGrmmduZXgg//jPbVEqTzFNvkNuNb3sQn01LZ070Y1UU2WwVXxC5xLsIaw6ddTrfhUjEIP7T4U2AV4UN8p0PWJhir6AvqmyPbrq4+wFxLLVBS+gWOZroHJewL8qM845jQdmYq1ej4Cp8A2sKEm6zP9VjGOGte1RAOtZ4hpsCwtSboyuOTayd3Wxygma9kbeRu6MiwBRPAwwki22OQAAAAASUVORK5CYII=" alt="user-male-circle">
         </div>
     </nav>
     <div id="tooltip" class="d-none">
-      <div class="pe-5 py-2 ps-2 me-3" id="divMenu">
+      <div class="pe-5 py-2 ps-2 me-3">
         <a href="#">[emailUtente]</a> <!-- mail dell'utente loggato -->
-        <div class="menuOpt">
-          <a href="#" class="">profile</a> <!-- link alle relative pagine -->
-          <img class="menuImg ms-1"
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAACX0lEQVR4nO2XTU8UQRCG54BeFBbDBdarAokHQeWMJMaLRtz/Akj0CHKAA8Fw5OMnaODEjmvikT+gcvPrZiAEZNUDPKbMu0lnme6eGTXGhDfpZNJvVXV1V1V3TZKc4X8CMAA8Al4Cb4GvGvadAlNA/99Y+BbQID/MwZt/YuFzwDJwIsO7wArwQKdxQcO+x4FVySCdZ0BH2cUvAa9k7AiYAbpy6HUBs0DTOY3uMjtvyMBnC0GJDVwH3svGa+B8EeVlKX4Eqhn8fTloCXio73sZclXgk2wtFUm4Ex37cAZvx+vDTIb8DYXj2L7zONAIGLOdG74DE0CfxqTm8JzEU3FpbPEBJ9tPJZyTlBMZnN0BhkYGVwH2xF8NOTAtoRUPb/E29GZwveIOPLpr4idDDqQSGvfw++L7PAln2Pfo1sTXQw7sSKg/4uCpXeiKNmxFwvsu5MCBhDo9/F0nCae066oW/yHujke3MxSiXA5IZiFQhvMBvVwO7ERCYHH8EnDAuNrvhCD1JaHVty4Tw3Ng1HmMbgMvxB177oJaKEfaa3m1bb7HqQBvGTmJaLI9bdy67w6JXkTAk9bOkwiADck+LnwRGfR8GmaduW3NjSYRAGOS3Xbm5qLH34J1MnqMmq3Hw2kyLiYRONm+6zxu35QbQzH9X1Ang57Sy0lJmK7zHC8WUexwQmENyUiJxYeAD7KRFm7NgG7Hiaae1EoOvYpibsduqBduydpOYsmp/z2V00Ng0HJCY1B1vu5ku+kslm5KXQDXgE3yI83V/RSF1bC6n7p+Rg413liJqUu6UtjwGZJ/iJ90ivkzFRnZFwAAAABJRU5ErkJggg=="
-            alt="user-male-circle">
-        </div>
-        <div class="menuOpt">
-            <a href="#" class="">settings</a> <!-- link alle relative pagine -->
-            <img class="menuImg ms-1"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABM0lEQVR4nO2UvUoDURCFV4SghcFWjJ0/WAl5BivBNKaPeQmfwSb4FCnCEogYO19CEBt7g6BgImL5yehBhuvuJmavXQ4MLOfOPefemdmbJAvEAFADUmCi6AM7McVf+A3jNmMYpBK8MkHFUFwvhsFEYj+nBbbEvcYwGEus9l8GfYkN1Q+La3FpDINd4DmnydulDQxqbE/lGqvxccQXyAWwDBwC58ANcA+8Ae9AJ8itu+bX81W/k1eAM+AxY3IMT0BVuQ1N2cCtD8QdZ4lvALcu+QG4AI6AfWDN5TaZjmZoYO+N4c5OACwV3LTrhOy2LcXI8d1w04cW1gvrmHzlVlx+y/Gn4mytEm6aBatTDNplDQ4ySjTSyduFJfoLmK3JJ3MbyMTGdA+4dKL2bWPaKCUeGOX+aJ+rOr+6rVZu2AAAAABJRU5ErkJggg=="
-              alt="admin-settings-male">
-        </div>
+        <a href="#" class="my-2">profile 👤</a> <!-- link alle relative pagine -->
+        <a href="#">settings ⚙️</a> <!-- link alle relative pagine -->
       </div>
+    </div>
   </header>
   <main>
-    <section id="getStarted" class="container">
-      <div class="col-8">
-        <h1 class="mb-4">Your colors, your designs, our tool </h1>
-        <h3>What is that color: WITC</h3>
-        <button class="btn mt-4" id="testBtn">Get started</button>
-      </div>
-      <div class="col-4">
-        <img src="../img/Logo_WITC_NoBG.png" class="ms-5" alt="">
+    <section id="getStarted">
+      <img src="sfondo.jpg" class="img img-fluid" id="sfondo" alt="">
+      <div class="container mb-5 mt-5" id="getStartedDiv">
+        <div class="col-8">
+          <h1 class="mb-4">Your colors, your designs, our tool </h1>
+          <h3>WITC: What is that color</h3>
+          <button class="btn mt-4" id="btnGetStarted">Get started</button>
+        </div>
+        <div class="col-4">
+          <img src="Logo_WITC_NoBG.png" class="ms-5" alt="">
+        </div>
       </div>
     </section>
+    <section id="whatIsIt" class="mt-4">
+      <div id="divInfo" class="mb-5 container">
+        <div class="alignCenterShortInfo" id="containerShortInfo">
+          <div id="infoShort" class="p-2 col-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo accusantium sapiente officia inventore ab
+              facere pariatur saepe sed aliquam, vero reprehenderit amet cupiditate quo odit itaque magnam a eaque labore.
+            </p>
+          </div>
+        </div>
+        <div id="infoCards" class="col-4 d-none">
+          <div class="row mb-3">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="cardShortInfo card">
+                <div class="card-body">
+                  <h5 class="card-title">Title #1</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="cardShortInfo card">
+                <div class="card-body">
+                  <h5 class="card-title">Title #2</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="cardShortInfo card">
+                <div class="card-body">
+                  <h5 class="card-title">Title #3</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="cardShortInfo card">
+                <div class="card-body">
+                  <h5 class="card-title">Title #4</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      <button id="seeMoreBtn" class="mt-2 mb-5 px-2 py-1">See more</button>
+    </section>
+    <!-- recensioni -->
+    <section class="container" id="review">
+      <div class="card mt-3 mb-3" id="divRev">
+        <div class="card-body">
+
+          <div id="test" class="row">
+            <div class="col-sm-5 mb-3 mb-sm-0">
+              <div id="showReview">
+                <div class="card-body mb-2">
+                  <h5 class="card-title">Reviews</h5>
+                    <div class="card testimonial-card mb-2">
+                        <div class="card-body p-3">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="avatar me-3">
+                                    <span>DJ</span>
+                                </div>
+                                <div>
+                                    <h5 class="card-title mb-0">Donald Jackman</h5>
+                                </div>
+                            </div>
+                            <div class="stars mb-3 mt-2">
+                                ★★★★★
+                            </div>
+                            <p class="card-text text-light mb-3">
+                                I've been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.
+                            </p>
+                        </div>
+                      </div>
+
+                      <div class="card testimonial-card mb-2">
+                        <div class="card-body p-3">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="avatar me-3">
+                                    <span>DJ</span>
+                                </div>
+                                <div>
+                                    <h5 class="card-title mb-0">Donald Jackman</h5>
+                                </div>
+                            </div>
+                            <div class="stars mb-3">
+                                ★★★★★
+                            </div>
+                            <p class="card-text text-light mb-3">
+                                I've been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.
+                            </p>
+                        </div>
+                      </div>                    
+                    <a href="#" id="btnShowMoreRev" class="btn"> Show more reviews</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div id="writeReview" class="card mt-1">
+                <div class="card-body">
+                  <p class="card-text">
+                    <div class="mb-3" id="divReviews">
+                      <label for="FormControlTextReview" class="form-label">Write your review</label>
+                      <textarea id="txtReview" class="form-control" rows="4"></textarea>
+                      <!-- From Uiverse.io by SelfMadeSystem --> 
+                      <div class="rating my-2">
+                        <input type="radio" id="star-1" name="star-radio" value="star-1">
+                        <label for="star-1">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <input type="radio" id="star-2" name="star-radio" value="star-1">
+                        <label for="star-2">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <input type="radio" id="star-3" name="star-radio" value="star-1">
+                        <label for="star-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <input type="radio" id="star-4" name="star-radio" value="star-1">
+                        <label for="star-4">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <input type="radio" id="star-5" name="star-radio" value="star-1">
+                        <label for="star-5">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                        </label>
+                        <label>Rating: </label>
+                      </div>
+                    </div>
+                  </p>
+                  <a href="#" id="btnWriteReview" class="btn">Send review</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>
   </main>
+      <!-- Footer -->
+      <footer class="footer pt-5 pb-4 mt-5">
+        <div class="container pt-3">
+          <!-- Social Media Links -->
+          <div class="d-flex justify-content-center gap-4 mb-4">
+            <a href="#" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+              </svg>
+            </a>
+          </div>
+      
+          <!-- Copyright and Payment Methods -->
+          <div class="border-top border-secondary pt-4">
+            <div class="d-flex flex-column justify-content-md-between align-items-center gap-3">
+              <p class="text-white-50 small mb-0">© <span id="year"></span> by WITC. Tutti i diritti sono riservati</p>
+            </div>
+          </div>
+        </div>
+      </footer>
 
   <!-- JS -->
   <script src="../scripts/utilities.js"></script>

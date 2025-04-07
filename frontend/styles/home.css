@@ -1,13 +1,16 @@
-html, body {
-    background-color: #050913;
+html,
+body,
+main {
+    background-color: black;
     color: white;
 }
-header{
-    margin-top: 200px;
+
+header {
+    margin-top: 150px;
 
 }
 
-#logoNav{
+#logoNav {
     height: 50px;
     width: auto;
     cursor: pointer;
@@ -15,7 +18,7 @@ header{
 
 /* codice per la navbar figa blurrata */
 
-#navbar{
+#navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -29,20 +32,20 @@ header{
 
 /* ----------------------- */
 
-#imgUtente{
+#imgUtente {
     height: 35px;
     width: auto;
 }
 
-#tooltip{
+#tooltip {
     margin-top: 64px;
     position: fixed;
     right: 0;
-    top:0%;
+    top: 0%;
     z-index: 3;
 }
 
-#divMenu{
+#tooltip div {
     background-color: rgba(32, 33, 36, 0.21);
     border: 1px solid rgba(32, 33, 36, 0.21);
 
@@ -54,39 +57,39 @@ header{
     flex-direction: column;
 }
 
-#tooltip div a{
+#tooltip div a {
     cursor: pointer;
     text-decoration: none;
     color: white;
 }
 
-.menuOpt:hover{
-    font-style: italic;
+#tooltip div a:hover {
+    text-decoration: underline;
 }
 
-.menuImg{
-    top:2px;
-    height: 17px;
-}
 
-.menuOpt{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-self: center;
-}
-
-.nav-link{
+h3 {
     color: white;
 }
 
-@keyframes linkAnimation{
-    50% {transform: scaleY(1.1); transform: scaleX(1.1);}
-    100% {transform: scaleY(1.0);transform: scaleX(1.0);}
-    
+.nav-link {
+    color: white;
 }
 
-.nav-link:hover{
+@keyframes linkAnimation {
+    50% {
+        transform: scaleY(1.1);
+        transform: scaleX(1.1);
+    }
+
+    100% {
+        transform: scaleY(1.0);
+        transform: scaleX(1.0);
+    }
+
+}
+
+.nav-link:hover {
     color: white;
     /* transform: scale(1.1);
     transition: 0.1s; */
@@ -95,24 +98,409 @@ header{
 
 }
 
-#testBtn{
-    background-color: #00FFFF;
+#btnGetStarted {
+    background-color: #00ffd0;
     /*box-shadow: 0px 0px 20px 0px #24e41e; */
 
     /* background-image: linear-gradient(to bottom right, #ec771d, #1888bb 60%, #e1dc5b); */
     /* background-image: linear-gradient(to bottom right,#1888bb, #6ebd33 70%, #e1dc5b); */
-    box-shadow: 0px 0px 3px 0px #00ffff58;
+    box-shadow: 0px 0px 3px 0px #00ffd071;
     border: 0px;
     color: #050913;
 }
 
-#testBtn:hover{
+#btnGetStarted:hover {
     transition: 0.15s;
-    box-shadow: 0px 0px 35px 1px #00ffff58;
+    box-shadow: 0px 0px 35px 1px #00ffd071;
 }
 
-#getStarted{
+#sfondo{
+    width: 100%;
+    height: auto;
+    position:absolute;
+    z-index: 0;
+    transform: rotate(180deg);
+
+    margin-top: -100px;
+}
+
+#getStarted {
+
+    background-color: transparent;
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    position: relative;
+}
+
+#getStartedDiv{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+
+
+    /* background-image: url("testSfondo.jpg"); */
+}
+
+/* What is it */
+
+.cardShortInfo{
+    background-color: #455a6454;
+    color: white;
+}
+
+.cardShortInfo p{
+    color: white;
+}
+
+#whatIsIt{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: black;
+    color: black;
+    position: relative;
+}
+
+#whatIsIt div{
+    text-align: center;
+}
+
+#seeMoreBtn{
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #455A64;
+    color: white;
+}
+
+#seeMoreBtn:active{
+    transform: scale(1.03);
+    transition: 0.01s;
+}
+
+#infoShort{
+    border: 1px solid #1b2327;
+    border-radius: 10px;
+    background-color: #37474F;
+    color: white;
+}
+
+.alignCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+@keyframes slideCenter {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(50%);
+    }
+}
+
+.slideCenter {
+    animation: slideCenter 0.5s ease-in-out;
+}
+
+.fadeOut {
+    animation: fadeOut 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.slideLeft {
+    animation: slideLeft 0.7s ease;
+}
+
+.fadeIn {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.alignShortInfo{
+    display: flex;
+    align-items: center;
+}
+
+.alignCenterShortInfo{
+    display: flex;
+    justify-content: center;
+}
+
+/* codice per ilrating */
+
+@keyframes slideDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(10%);
+    }
+}
+
+.slideDown{
+    animation: slideDown 0.5s ease-in-out;
+    transform: translateY(10%);
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(10%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.slideUp{
+    animation: slideUp 0.4s ease-in-out;
+    transform: translateY(0);
+}
+
+#divRev {
+    border: 1px solid rgba(51, 132, 104, 0.562);
+    box-shadow: 0px 0px 35px 1px rgb(51, 132, 103);
+
+    background-color: #050b0e;
+}
+
+#test{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#showReview{
+    background-color: #050b0e;
+    border: 1px solid #27292a;
+    border-radius: 15px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#divReviews{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.3rem;
+    --stroke: #666;
+    --fill: #00ffd0;
+    align-items: center;
+}
+
+.rating input {
+    appearance: unset;
+}
+
+.rating label {
+    cursor: pointer;
+}
+
+.rating svg {
+    width: 2rem;
+    height: 2rem;
+    overflow: visible;
+    fill: transparent;
+    stroke: var(--stroke);
+    stroke-linejoin: bevel;
+    stroke-dasharray: 12;
+    animation: idle 4s linear infinite;
+    transition: stroke 0.2s, fill 0.5s;
+}
+
+@keyframes idle {
+    from {
+        stroke-dashoffset: 24;
+    }
+}
+
+.rating label:hover svg {
+    stroke: var(--fill);
+}
+
+.rating input:checked~label svg {
+    transition: 0s;
+    animation: idle 4s linear infinite, yippee 0.75s backwards;
+    fill: var(--fill);
+    stroke: var(--fill);
+    stroke-opacity: 0;
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+}
+
+@keyframes yippee {
+    0% {
+        transform: scale(1);
+        fill: var(--fill);
+        fill-opacity: 0;
+        stroke-opacity: 1;
+        stroke: var(--stroke);
+        stroke-dasharray: 10;
+        stroke-width: 1px;
+        stroke-linejoin: bevel;
+    }
+
+    30% {
+        transform: scale(0);
+        fill: var(--fill);
+        fill-opacity: 0;
+        stroke-opacity: 1;
+        stroke: var(--stroke);
+        stroke-dasharray: 10;
+        stroke-width: 1px;
+        stroke-linejoin: bevel;
+    }
+
+    30.1% {
+        stroke: var(--fill);
+        stroke-dasharray: 0;
+        stroke-linejoin: miter;
+        stroke-width: 8px;
+    }
+
+    60% {
+        transform: scale(1.2);
+        fill: var(--fill);
+    }
+}
+
+/* ----------------------------------- */
+
+/* codice per le reviews */
+
+.testimonial-card {
+    max-width: 400px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #455a6454;
+    color: white;
+    backdrop-filter: blur(10px)
+}
+
+#btnShowMoreRev{
+    background-color: #00ffd0;
+}
+
+#writeReview{
+    background-color: #455a6454;
+    color: white;
+}
+
+#btnWriteReview{
+    background-color: #00ffd0;
+}
+
+#txtReview{
+    background-color: #050b0e2f;
+    border: 1px solid #4e5152;
+    color: white;
+    font-size: small;
+}
+
+#txtReview:focus{
+    box-shadow: 0px 0px 30px 3px #00ffd034;
+    border: 1px solid #4e5152;
+    color: white;
+    font-size: small;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #00ffd0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.stars {
+    color: #00ffd0;
+    letter-spacing: 2px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #4a4a4a;
+    line-height: 1.5;
+}
+
+/* footer */
+
+.footer {
+    /* background: linear-gradient(to right, #111827, #581c87); */
+    color: white;
+}
+
+.social-icon {
+    color: white;
+    transition: color 0.2s;
+}
+
+.social-icon:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.payment-icon {
+    height: 2rem;
+    width: auto;
+}
+
+a.text-white {
+    transition: opacity 0.2s;
+}
+
+a.text-white:hover {
+    opacity: 0.7;
 }
