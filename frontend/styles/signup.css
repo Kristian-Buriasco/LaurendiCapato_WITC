@@ -40,6 +40,7 @@ html,
     border-radius: 0.75rem;
     background-color: #000c3f;
     padding: 2rem;
+    padding-bottom: 0rem;
     color: rgba(243, 244, 246, 1);
 }
 
@@ -129,8 +130,38 @@ html,
     color: rgba(156, 163, 175, 1);
 }
 
+.noAccounlnk{
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 1rem;
+    color: rgba(156, 163, 175, 1);
+    text-decoration: none;
+}
+
+.noAccounlnk:hover{
+    text-decoration: underline #6c94bc;
+}
+
+#divLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #catchphrase2 {
     display: none;
+}
+
+#imgBackHome{
+    width: 40px;
+}
+
+#divBackHome{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position:absolute;
 }
 
 @media screen and (max-width: 1324px) {
