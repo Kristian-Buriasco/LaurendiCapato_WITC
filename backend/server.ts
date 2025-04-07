@@ -1,36 +1,50 @@
-import express, {Request, Response} from 'express';
-import { MongoClient, ObjectId } from 'mongodb';
+import express, { Request, Response } from 'express';
 import dotenv from 'dotenv';
+import mysql from 'mysql'
 
 dotenv.config(); // serve per mettere le variabili di sistema
 
-const MONGO_URI = process.env.MONGO_URI || "";
-const PORT = 4000;
-const DB_NAME = "5E";
-const COLLECTION_NAME = "unicorns";
+const PORT = process.env.PORT || 3306;
+const PWD = process.env.PWD;
 
+let app = express();
+app.use(express.json());
 
-
-let ex = express();
-const client = new MongoClient(MONGO_URI);
-
-async function connectDB() {
-
-    try
-    {
-        await client.connect();
-        console.log("Connesso");
-    }
-    catch(error){
-        console.log("Errore", error);
-    }
-}
-
-ex.listen(PORT, () => {
-    console.log(`Server in ascolto su: http://localhost:${PORT}`);
+const db = mysql.createConnection({
+    host: 'srv-captain--db-witc-db',
+    user: 'root',
+    password: PWD,  
+    database: 'witc'
 });
 
-
-ex.get("/api", (req: Request, res: Response) => {
-    res.send("Server is running!");
+app.listen(PORT, () => {
+    console.log(`Server in ascolto sulla porta ${PORT}`);
 });
+
+// Connetti al database
+db.connect((err) => {
+
+    if (err) {
+        console.error('Errore di connessione:', err);
+        return;
+    }
+
+    console.log('Connesso a MySQL');
+
+});
+
+// Esempio di endpoint
+app.get('/api', (req, res) => {
+    res.send('API attiva!');
+});
+
+// // Esempio: recupera dati da una tabella
+// app.get('/utenti', (req, res) => {
+//     db.query('SELECT * FROM utenti', (err, results) => {
+//         if (err) {
+//             res.status(500).send(err);
+//             return;
+//         }
+//         res.json(results);
+//     });
+// });
