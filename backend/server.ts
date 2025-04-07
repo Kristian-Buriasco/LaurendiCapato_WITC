@@ -33,7 +33,7 @@ db.connect((err) => {
 
 });
 
-// Esempio di endpoint
+// test endpoint
 app.get('/api', (req, res) => {
     res.send('API attiva!');
 });
