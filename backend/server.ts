@@ -4,7 +4,7 @@ import mysql from 'mysql'
 
 dotenv.config(); // serve per mettere le variabili di sistema
 
-const PORT = process.env.PORT || 3306;
+const PORT = process.env.PORT || 4000;
 const PWD = process.env.PWD;
 
 let app = express();
