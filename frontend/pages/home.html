@@ -122,7 +122,7 @@
       <div class="card mt-3 mb-3" id="divRev">
         <div class="card-body">
 
-          <div id="test" class="row">
+          <div id="containerRev" class="row">
             <div class="col-sm-5 mb-3 mb-sm-0">
               <div id="showReview">
                 <div class="card-body mb-2">
@@ -163,18 +163,20 @@
                                 I've been using Imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.
                             </p>
                         </div>
-                      </div>                    
-                    <a href="#" id="btnShowMoreRev" class="btn"> Show more reviews</a>
+                      </div>  
+                      <div id="divShowMoreRev">
+                        <button id="btnShowMoreRev" class="btn mt-2"> Show more reviews</button>
+                      </div>                  
                 </div>
               </div>
             </div>
             <div class="col-sm-6">
-              <div id="writeReview" class="card mt-1">
+              <div id="writeReview" class="card">
                 <div class="card-body">
+                  <h5 class="card-title">Write your review</h5>
                   <p class="card-text">
-                    <div class="mb-3" id="divReviews">
-                      <label for="FormControlTextReview" class="form-label">Write your review</label>
-                      <textarea id="txtReview" class="form-control" rows="4"></textarea>
+                    <div id="divReviews">
+                      <textarea id="txtReview" class="form-control mb-3" rows="4"></textarea>
                       <!-- From Uiverse.io by SelfMadeSystem --> 
                       <div class="rating my-2">
                         <input type="radio" id="star-1" name="star-radio" value="star-1">
@@ -201,7 +203,9 @@
                       </div>
                     </div>
                   </p>
-                  <a href="#" id="btnWriteReview" class="btn">Send review</a>
+                  <div id="divBtnSendRev">
+                    <button id="btnWriteReview" class="btn">Send review</button>
+                  </div>
                 </div>
               </div>
             </div>

@@ -293,12 +293,12 @@ h3 {
 
 #divRev {
     border: 1px solid rgba(51, 132, 104, 0.562);
+    border-radius: 15px;
     box-shadow: 0px 0px 35px 1px rgb(51, 132, 103);
-
     background-color: #050b0e;
 }
 
-#test{
+#containerRev{
     display: flex;
     justify-content: space-evenly;
 
@@ -426,13 +426,34 @@ h3 {
     background-color: #00ffd0;
 }
 
+#btnShowMoreRev:hover{
+    color:black;
+    box-shadow: 2px 2px 0px 2px #00ffd03d;
+}
+
+#divShowMoreRev{
+    display: flex;
+    justify-content: center;
+}
+
 #writeReview{
     background-color: #455a6454;
     color: white;
+    border-radius: 15px;
 }
 
 #btnWriteReview{
     background-color: #00ffd0;
+}
+
+#btnWriteReview:hover{
+    color:black;
+    box-shadow: 2px 2px 0px 2px #00ffd03d;
+}
+
+#divBtnSendRev{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 #txtReview{
@@ -440,6 +461,9 @@ h3 {
     border: 1px solid #4e5152;
     color: white;
     font-size: small;
+
+    height: 375px;
+    resize: none;
 }
 
 #txtReview:focus{
