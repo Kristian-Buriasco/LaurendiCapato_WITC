@@ -13,7 +13,7 @@ app.use(express.json());
 const db = mysql.createConnection({
     host: 'srv-captain--db-witc-db',
     user: 'root',
-    password: PWD,  
+    password: "Pizzabuona06",  
     database: 'witc'
 });
 
