@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
 import dotenv from 'dotenv';
-import mysql from 'mysql';
+import mysql from 'mysql2';
 
 dotenv.config(); // serve per mettere le variabili di sistema
 
