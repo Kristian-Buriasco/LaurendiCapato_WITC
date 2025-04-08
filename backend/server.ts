@@ -6,7 +6,6 @@ dotenv.config(); // serve per mettere le variabili di sistema
 
 const PORT = process.env.PORT || 4000;
 const PWD = process.env.PWD || "NOT FUCKING FOUND"
-console.log(PWD);
 
 let app = express();
 app.use(express.json());
@@ -20,10 +19,12 @@ const db = mysql.createConnection({
 
 app.listen(PORT, () => {
     console.log(`Server in ascolto sulla porta ${PORT}`);
+    console.log(PWD);
 });
 
 // Connetti al database
 db.connect((err: mysql.QueryError | null) => {
+    console.log(PWD);
     if (err) {
         console.error('Errore di connessione:', err);
         return;
