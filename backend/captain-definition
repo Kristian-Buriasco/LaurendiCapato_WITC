@@ -3,10 +3,11 @@
   "dockerfileLines": [
     "FROM node:18",
     "WORKDIR /app",
-    "RUN curl -s https://worldtimeapi.org/api/timezone/Etc/UTC > /dev/null",
+    "RUN curl -s https://worldtimeapi.org/api/timezone/Europe/Rome > /dev/null",
     "COPY . .",
     "RUN npm install",
     "CMD [\"npm\", \"start\"]",
     "EXPOSE 4000"
   ]
 }
+
