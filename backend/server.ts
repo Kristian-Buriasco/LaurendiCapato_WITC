@@ -6,6 +6,7 @@ dotenv.config(); // serve per mettere le variabili di sistema
 
 const PORT = process.env.PORT || 4000;
 const PWD = process.env.PWD;
+console.log(PWD);
 
 let app = express();
 app.use(express.json());
