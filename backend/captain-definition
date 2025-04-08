@@ -1,9 +1,6 @@
 {
   "schemaVersion": 2,
-  
   "dockerfileLines": [
-    "ARG PWD=${PWD}",
-    "ENV PWD=${PWD}",
     "FROM node:18",
     "WORKDIR /app",
     "RUN curl -s https://worldtimeapi.org/api/timezone/Europe/Rome | grep datetime",
