@@ -23,7 +23,7 @@ app.listen(PORT, () => {
 });
 
 // Connetti al database
-db.connect((err: mysql.MysqlError | null) => {
+db.connect((err: mysql.QueryError | null) => {
     if (err) {
         console.error('Errore di connessione:', err);
         return;
