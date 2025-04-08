@@ -22,12 +22,10 @@ const db = mysql.createConnection({
 
 app.listen(PORT, () => {
     console.log(`Server in ascolto sulla porta ${PORT}`);
-    console.log(PWD);
 });
 
 // Connetti al database
 db.connect((err: mysql.QueryError | null) => {
-    console.log(PWD);
     if (err) {
         console.error('Errore di connessione:', err);
         return;
