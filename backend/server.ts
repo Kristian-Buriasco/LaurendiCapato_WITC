@@ -2,10 +2,12 @@ import express, { Request, Response } from 'express';
 import dotenv from 'dotenv';
 import mysql from 'mysql2';
 
-dotenv.config(); // serve per mettere le variabili di sistema
+//Config the env from the ENVIRONMENT
+
 
 // DEBUG THE ENVS
 console.log(process.env);
+dotenv.config();
 console.log(process.env.PWD);
 
 const PORT = process.env.PORT || 4000;
