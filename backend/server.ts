@@ -4,8 +4,12 @@ import mysql from 'mysql2';
 
 dotenv.config(); // serve per mettere le variabili di sistema
 
+// DEBUG THE ENVS
+console.log(process.env);
+console.log(process.env.PWD);
+
 const PORT = process.env.PORT || 4000;
-const PWD = process.env.PWD || "Pizzabuona06";
+const PWD = process.env.PWD ;
 
 let app = express();
 app.use(express.json());
@@ -13,7 +17,7 @@ app.use(express.json());
 const db = mysql.createConnection({
     host: 'srv-captain--db-witc-db',
     user: 'root',
-    password: "Pizzabuona06",  
+    password: PWD,  
     database: 'witc'
 });
 
