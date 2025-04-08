@@ -6,12 +6,9 @@ import mysql from 'mysql2';
 
 
 // DEBUG THE ENVS
-console.log(process.env);
 dotenv.config();
-console.log(process.env.PWD);
-
 const PORT = process.env.PORT || 4000;
-const PWD = process.env.PWD ;
+const PWD = process.env.passwd ;
 
 let app = express();
 app.use(express.json());
