@@ -22,15 +22,12 @@ app.listen(PORT, () => {
 });
 
 // Connetti al database
-db.connect((err) => {
-
+db.connect((err: mysql.MysqlError | null) => {
     if (err) {
         console.error('Errore di connessione:', err);
         return;
     }
-
     console.log('Connesso a MySQL');
-
 });
 
 // test endpoint
